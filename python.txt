@@ -1,0 +1,102 @@
+     FACTORIAL IN JAVA:
+n=int(input("Enter a Number :"))
+fact = 1
+  
+for i in range(1,n+1): 
+    fact = fact * i 
+      
+print ("The factorial of n is : ",end="") 
+print (fact) 
+
+
+
+        PRIME OR NOT
+
+num=int(input("Enter a Number :"))
+if num > 1:
+   # check for factors
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           break
+   else:
+       print(num,"is a prime number")
+       
+# if input number is less than
+# or equal to 1, it is not prime
+else:
+   print(num,"is not a prime number")
+
+
+
+
+          WAP to check to select off numbers from the list:
+
+list1=[21,22,23,24,25,26,27,28,29,30,31,32,66,45,20];
+print("List is :",list1);
+for num in list1: 
+      
+    # checking condition 
+    if num % 2 != 0: 
+       print(num, end = " ") 
+
+
+               WAP to display the Celsius value:
+
+celsius =float(input("enter the Celsius value :"))
+# calculate fahrenheit
+fahrenheit = (celsius * 1.8) + 32
+print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))
+
+
+
+        Python program to print Fibonacci series until 'n' value using while loop:
+
+#Python program to generate Fibonacci series until 'n' value
+n = int(input("Enter the value of 'n': "))
+a = 0
+b = 1
+sum = 0
+count = 1
+print("Fibonacci Series: ", end = " ")
+while(count <= n):
+  print(sum, end = " ")
+  count += 1
+  a = b
+  b = sum
+  sum = a + b
+
+
+               Python Program to Check if a Number is Odd or Even:
+
+
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+   print("{0} is Even".format(num))
+else:
+   print("{0} is Odd".format(num))
+
+
+
+               Python Program to Display Calendar:
+
+
+import calendar
+
+yy = 2014  # year
+mm = 11    # month
+
+# To take month and year input from the user
+# yy = int(input("Enter year: "))
+# mm = int(input("Enter month: "))
+
+# display the calendar
+print(calendar.month(yy, mm))
+
+
+             Python Program to Find ASCII Value of Character:
+     
+# Program to find the ASCII value of the given character
+
+c = 'p'
+print("The ASCII value of '" + c + "' is", ord(c))
